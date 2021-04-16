@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="cursoDAgil.dao.direccion.DireccionDaoImplTest" time="0" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="cursoDAgil.dao.ganancias.GananciasDaoImplTest" time="0.012" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_281\bin"/>
@@ -61,6 +61,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="cursoDAgil.dao.direccion.DireccionDaoImplTest" name="consultarDireccionPorId" time="0"/>
-  <testcase classname="cursoDAgil.dao.direccion.DireccionDaoImplTest" name="pruebaConsultarTodo" time="0"/>
+  <testcase classname="cursoDAgil.dao.ganancias.GananciasDaoImplTest" name="consultarGananciasPorId" time="0.009"/>
+  <testcase classname="cursoDAgil.dao.ganancias.GananciasDaoImplTest" name="xd" time="0.001"/>
+  <testcase classname="cursoDAgil.dao.ganancias.GananciasDaoImplTest" name="pruebaConsultarTodo" time="0.002"/>
+  <testcase classname="cursoDAgil.dao.ganancias.GananciasDaoImplTest" name="nuevoRegistro" time="0"/>
 </testsuite>

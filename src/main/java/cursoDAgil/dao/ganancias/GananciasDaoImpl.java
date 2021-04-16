@@ -8,6 +8,7 @@ import javax.inject.Named;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import cursoDAgil.bd.domain.Cliente;
 import cursoDAgil.bd.domain.Ganancias;
 import cursoDAgil.bd.mappers.GananciasMapper;
 
@@ -23,9 +24,16 @@ public class GananciasDaoImpl implements GananciasDao {
 
 	@Override
 	public List<Ganancias> obtenerGanancias() {
+		List<Ganancias> list = null;
 		try{
 			GananciasMapper gananciasMapper = sqlSession.getMapper(GananciasMapper.class);
-			return gananciasMapper.obtenerGanancias();
+			list = gananciasMapper.obtenerGanancias();
+			for(Ganancias g:list){
+				System.out.println("idGanancia"+ g.getIdGanancia());
+				System.out.println("ventaId"+ g.getIdVenta());
+				System.out.println("totalGanancia"+ g.getTotalGanancia());
+			}
+			//return gananciasMapper.obtenerGanancias();
 		}catch(Exception e){
 			System.out.println("Error1: " + e);
 		}

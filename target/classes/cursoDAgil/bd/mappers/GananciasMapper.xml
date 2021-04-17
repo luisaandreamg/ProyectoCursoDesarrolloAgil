@@ -22,7 +22,7 @@
 		INSERT INTO ganancias(idGanancia,ventaId,totalGanancia,fecha)
 		VALUES(#{idGanancia},#{ventaId},#{totalGanancia},#{fecha})
 	</insert>
-	<select id="obtenerGananciasPorId" resultMap="BaseResultMap"
+	<select id="obtenerGananciasPorFecha" resultMap="BaseResultMap"
 		parameterType="hashMap">
 		SELECT
 		gan.idGanancia,
@@ -32,7 +32,7 @@
 		FROM 
 		GANANCIAS gan 
 		WHERE 
-		idGanancia = #{idGanancia}
+		fecha = #{fecha}
 	</select>
 
 </mapper>

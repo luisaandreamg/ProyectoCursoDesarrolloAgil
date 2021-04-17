@@ -1,5 +1,6 @@
 package cursoDAgil.dao.ganancias;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -53,10 +54,10 @@ public class GananciasDaoImpl implements GananciasDao {
 	}
 
 	@Override
-	public Ganancias obtenerGananciasPorId(Map<String, Integer> mapGanancias) {
+	public Ganancias obtenerGananciasPorFecha(Map<String, Date> mapGanancias) {
 		try{
 			GananciasMapper gananciasMapper = sqlSession.getMapper(GananciasMapper.class);
-			return gananciasMapper.obtenerGananciasPorId(mapGanancias);
+			return gananciasMapper.obtenerGananciasPorFecha(mapGanancias);
 		}catch(Exception e){
 			System.out.println("Error3: " + e);
 		}
